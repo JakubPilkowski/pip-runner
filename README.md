@@ -1,2 +1,2 @@
-# widget-runner
-Application to run website on widget
+# pip-runner
+Application to run website on picture to picture mode
