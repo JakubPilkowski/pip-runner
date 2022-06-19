@@ -79,7 +79,10 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar style={Platform.OS === 'android' ? 'auto' : 'light'} />
+      <StatusBar
+        backgroundColor={COLORS.backgroundStart}
+        style={Platform.OS === 'android' ? 'auto' : 'light'}
+      />
       <Routs />
       <AnimatedSplashScreen />
     </SafeAreaView>

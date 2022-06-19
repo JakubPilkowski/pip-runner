@@ -36,6 +36,7 @@ const ThemedTextfield = forwardRef<TextInput, ThemedTextfieldProps>(
       disabled,
       wrapperStyles = defualtObject,
       containerStyles = defualtObject,
+      boxStyles = defualtObject,
       inputStyles = defualtObject,
       keyboardType = 'default',
       helperText = '',
@@ -59,6 +60,7 @@ const ThemedTextfield = forwardRef<TextInput, ThemedTextfieldProps>(
     const textfieldStyles = themedTextfieldStyles({
       wrapperStyles,
       containerStyles,
+      boxStyles,
       inputStyles,
     });
 

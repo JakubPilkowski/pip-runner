@@ -3,6 +3,8 @@ package com.jacobkalabanga.piprunner;
 import android.os.Build;
 import android.os.Bundle;
 
+import android.content.Intent;
+
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
@@ -17,6 +19,13 @@ public class MainActivity extends ReactActivity {
     // This is required for expo-splash-screen.
     setTheme(R.style.AppTheme);
     super.onCreate(null);
+  }
+
+  // For Share API
+  @Override
+  public void onNewIntent(Intent intent) {
+    super.onNewIntent(intent);
+    setIntent(intent);
   }
 
   /**

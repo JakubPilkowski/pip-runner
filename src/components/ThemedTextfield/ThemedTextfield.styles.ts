@@ -4,12 +4,14 @@ import { TextStyle, ViewStyle } from 'react-native';
 type StylesOptions = {
   wrapperStyles: ViewStyle;
   containerStyles: ViewStyle;
+  boxStyles: ViewStyle;
   inputStyles: TextStyle;
 };
 
 export default ({
   wrapperStyles,
   containerStyles,
+  boxStyles,
   inputStyles,
 }: StylesOptions): ThemedTextFieldStyles => {
   return {
@@ -33,6 +35,7 @@ export default ({
       alignSelf: 'flex-start',
       width: '100%',
       height: 45,
+      ...boxStyles,
     },
     inputStyles: {
       fontSize: 16,
