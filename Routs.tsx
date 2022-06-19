@@ -8,7 +8,9 @@ import Pip from 'views/Pip';
 
 export type RootStackParamList = {
   Main: undefined;
-  Pip: undefined;
+  Pip: {
+    uri: string;
+  };
 };
 
 export type RootStackScreenProps<T extends keyof RootStackParamList> = NativeStackScreenProps<
@@ -26,10 +28,7 @@ const Routs: FC = () => {
       <Stack.Navigator>
         <Stack.Group
           screenOptions={{
-            headerStyle: {
-              backgroundColor: COLORS.primary,
-            },
-            headerShadowVisible: false,
+            headerShown: false,
             title: '',
             animation: 'none',
           }}>

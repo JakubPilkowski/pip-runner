@@ -13,7 +13,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   primaryColor: COLORS.primary,
   backgroundColor: COLORS.primary,
   androidNavigationBar: {
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.secondary,
     barStyle: 'light-content',
   },
   splash: {

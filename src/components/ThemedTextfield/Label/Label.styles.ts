@@ -6,12 +6,12 @@ export default (): LabelStyles => {
   return {
     wrapperStyles: {
       position: 'absolute',
-      backgroundColor: COLORS.accent,
+      backgroundColor: COLORS.primary,
       zIndex: 10,
     },
     labelStyles: {
       fontSize: 14,
-      color: COLORS.primary,
+      color: COLORS.secondary,
     },
   };
 };
