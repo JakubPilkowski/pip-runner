@@ -15,12 +15,14 @@ export default function getErrorStyles(): ErrorStyles {
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: COLORS.error,
-      paddingVertical: 5,
+      paddingVertical: 10,
+      borderRadius: 10,
     },
     messageStyles: {
       fontFamily: 'Lato',
-      fontSize: 14,
-      lineHeight: 16,
+      fontSize: 18,
+      lineHeight: 20,
+      color: COLORS.secondary,
     },
   };
 }
