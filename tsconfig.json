@@ -14,7 +14,8 @@
       "views/*": ["./views/*"],
       "types/*": ["./types/*"],
       "state/*": ["./state/*"],
-      "hoc/*": ["./hoc/*"]
+      "hoc/*": ["./hoc/*"],
+      "externals/*": ["./externals/*"]
     }
   }
 }

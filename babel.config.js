@@ -28,6 +28,7 @@ module.exports = function (api) {
             types: './src/types',
             state: './src/state',
             hoc: './src/hoc',
+            externals: './src/externals',
           },
         },
       ],

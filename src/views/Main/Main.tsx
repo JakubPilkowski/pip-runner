@@ -30,6 +30,7 @@ const Main: FC<MainProps> = ({ navigation }) => {
       // print error
       if (!weblink) return;
       console.log('push');
+      console.log(weblink);
       navigation.push('Pip', { uri: weblink });
     },
     (error: unknown) => {
@@ -47,6 +48,7 @@ const Main: FC<MainProps> = ({ navigation }) => {
 
   const handleFormSubmit = useCallback(() => {
     if (isDisabled) return;
+    console.log(uri);
     navigation.push('Pip', { uri });
   }, [navigation, uri, isDisabled]);
 

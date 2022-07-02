@@ -19,6 +19,7 @@ module.exports = {
           ['assets', './src/assets'],
           ['components', './src/components'],
           ['hooks', './src/hooks'],
+          ['externals', './src/externals'],
           ['utils', './src/utils'],
           ['views', './src/views'],
           ['types', './src/types'],
